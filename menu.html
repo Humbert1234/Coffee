@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Coffee Logo">
+                <h1>Coffee</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">☰</div>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="container menu-flex-container">
+            <div class="menu-left">
+                <h2>Our Delicious Menu</h2>
+
+                <nav class="menu-categories">
+                    <ul>
+                        <li><button class="filter-btn active" data-category="all">All</button></li>
+                        <li><button class="filter-btn" data-category="hot-coffee">Hot Coffee</button></li>
+                        <li><button class="filter-btn" data-category="cold-coffee">Cold Coffee</button></li>
+                        <li><button class="filter-btn" data-category="pastries">Pastries</button></li>
+                        <li><button class="filter-btn" data-category="snacks">Snacks</button></li>
+                    </ul>
+                </nav>
+
+                <section class="menu-items-grid">
+                    <div class="menu-item" data-category="hot-coffee" data-id="espresso" data-name="Espresso"
+                        data-price="3.00">
+                        <img src="images/hot-coffee1.png" alt="Espresso">
+
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Espresso</h3>
+                                <p>A strong shot of rich, concentrated coffee.</p>
+                            </div>
+                            <span class="price">$3.00</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="hot-coffee" data-id="cappuccino" data-name="Cappuccino"
+                        data-price="4.50">
+                        <img src="images/hot-coffee2.png" alt="Cappuccino">
+
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Cappuccino</h3>
+                                <p>Espresso with steamed milk and a thick layer of foam.</p>
+                            </div>
+                            <span class="price">$4.50</span>
+                        </div>
+
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="hot-coffee" data-id="latte" data-name="Latte"
+                        data-price="4.75">
+                        <img src="images/latte.png" alt="Latte">
+
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Latte</h3>
+                                <p>Espresso with steamed milk and a thin layer of foam.</p>
+                            </div>
+                            <span class="price">$4.75</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="cold-coffee" data-id="iced-coffee" data-name="Iced Coffee"
+                        data-price="4.00">
+                        <img src="images/cold-coffee1.png" alt="Iced Coffee">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Iced Coffee</h3>
+                                <p>Chilled brewed coffee served over ice.</p>
+                            </div>
+                            <span class="price">$4.00</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="cold-coffee" data-id="cold-brew" data-name="Cold Brew"
+                        data-price="5.00">
+                        <img src="images/cold-coffee2.png" alt="Cold Brew">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Cold Brew</h3>
+                                <p>Smooth, low-acidity coffee steeped for hours.</p>
+                            </div>
+                            <span class="price">$5.00</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="cold-coffee" data-id="mocha-frappe" data-name="Mocha Frappe"
+                        data-price="5.50">
+                        <img src="images/frappe.png" alt="Mocha Frappe">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Mocha Frappe</h3>
+                                <p>Blended coffee with chocolate, milk, and ice.</p>
+                            </div>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="pastries" data-id="croissant" data-name="Butter Croissant"
+                        data-price="3.50">
+                        <img src="images/pastry1.png" alt="Croissant">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Butter Croissant</h3>
+                                <p>Flaky, buttery French pastry.</p>
+                            </div>
+                            <span class="price">$3.50</span>
+                        </div>
+                        <span class="dietary-info">Contains Gluten</span>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pastries" data-id="blueberry-muffin"
+                        data-name="Blueberry Muffin" data-price="3.75">
+                        <img src="images/pastry2.png" alt="Muffin">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Blueberry Muffin</h3>
+                                <p>Soft, sweet muffin bursting with blueberries.</p>
+                            </div>
+                            <span class="price">$3.75</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pastries" data-id="vegan-muffin"
+                        data-name="Vegan Chocolate Chip Muffin" data-price="4.00">
+                        <img src="images/vegan-muffin.png" alt="Vegan Muffin">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Vegan Chocolate Chip Muffin</h3>
+                                <p>Delicious plant-based muffin with chocolate chips.</p>
+                            </div>
+                            <span class="price">$4.00</span>
+                        </div>
+                        <span class="dietary-info vegan">Vegan</span>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks" data-id="caprese-sandwich"
+                        data-name="Caprese Sandwich" data-price="7.00">
+                        <img src="images/snack1.png" alt="Sandwich">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Caprese Sandwich</h3>
+                                <p>Fresh mozzarella, tomato, and basil on focaccia.</p>
+                            </div>
+                            <span class="price">$7.00</span>
+                        </div>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="snacks" data-id="chocolate-chip-cookie"
+                        data-name="Chocolate Chip Cookie" data-price="2.50">
+                        <img src="images/snack2.png" alt="Cookie">
+                        <div class="menu-item-text">
+                            <div class="text">
+                                <h3>Chocolate Chip Cookie</h3>
+                                <p>Classic chewy cookie with rich chocolate chips.</p>
+                            </div>
+                            <span class="price">$2.50</span>
+                        </div>
+                        <span class="dietary-info gluten-free">Gluten-Free</span>
+                        <div class="add-to-cart-controls">
+                            <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <div class="quantity-controls hidden">
+                                <button class="minus-btn" title="Decrease quantity"><i
+                                        class="fas fa-minus"></i></button>
+                                <span class="quantity">0</span>
+                                <button class="plus-btn" title="Increase quantity"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="special-deals">
+                    <h2>Special Deals</h2>
+                    <div class="deal-item">
+                        <h3>Morning Combo</h3>
+                        <p>Any hot coffee + croissant for just $6.00!</p>
+                    </div>
+                    <div class="deal-item">
+                        <h3>Loyalty Program</h3>
+                        <p>Buy 9 coffees, get your 10th free!</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="menu-right">
+                <div class="cart-summary">
+                    <h3>Your Cart (<span id="cart-item-count">0</span>)</h3>
+                    <div id="cart-items-list" class="cart-items-list">
+                        <div class="empty-cart-message">
+                            <img src="images/empty-cart.png" alt="Empty Cart" class="empty-cart-icon">
+                            <p>Your added items will appear here</p>
+                        </div>
+                    </div>
+                    <div class="cart-total-section">
+                        <p class="order-total-text">Order Total <span id="order-total">$0.00</span></p>
+                        <div class="carbon-neutral-info">
+                            <i class="fas fa-leaf"></i> This is a carbon-neutral delivery
+                        </div>
+                        <button class="btn btn-primary" id="confirm-order-btn" disabled>Confirm Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="order-confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="confirmation-header">
+                <i class="fas fa-check-circle confirmation-icon"></i>
+                <h2>Order Confirmed</h2>
+                <p>We hope you enjoy your food!</p>
+            </div>
+            <div id="confirmed-order-items" class="confirmed-order-items">
+            </div>
+            <p class="order-total-modal">Order Total <span id="order-total-modal">$0.00</span></p>
+            <button class="btn btn-primary" id="start-new-order-btn">Start New Order</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

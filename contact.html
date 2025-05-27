@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Coffee Logo">
+                <h1>Coffee</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">&#9776;</div>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <h2>Get in Touch</h2>
+
+            <section class="contact-info">
+                <div class="info-item">
+                    <h3>Location</h3>
+                    <p>123 Coffee Milk Bean Maremar, Mandaon Rd 90210</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3898.3974846646315!2d123.32808087506494!3d12.288996987967188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDE3JzIwLjQiTiAxMjPCsDE5JzUwLjQiRQ!5e0!3m2!1sen!2scm!4v1748144827704!5m2!1sen!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+                </div>
+
+                <div class="info-item">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+                    <p>Saturday: 8:00 AM - 7:00 PM</p>
+                    <p>Sunday: 8:00 AM - 5:00 PM</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Contact Details</h3>
+                    <p><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@coffee.com">info@coffee.com</a></p>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </section>
+
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/coffee">
+                        <img src="images/icon-facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com/coffee">
+                        <img src="images/icon-instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com/coffee">
+                        <img src="images/x.png" alt="Twitter">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
