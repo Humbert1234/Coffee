@@ -245,9 +245,7 @@ ul {
     left: 45%;
     width: 100px;
     height: 100px;
-    /* Example size */
     background: url('../images/splash.png') no-repeat center center / contain;
-    /* Placeholder for splash image */
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     animation: splashEffect 2s ease-out 1s forwards;
