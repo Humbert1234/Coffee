@@ -476,7 +476,6 @@ section h2::after {
     position: relative;
     padding-bottom: 15px;
     opacity: 1;
-    /* Default for filtering */
     transform: translateY(0);
 }
 
